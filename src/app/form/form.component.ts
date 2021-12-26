@@ -14,7 +14,17 @@ export class FormComponent implements OnInit {
   myDate!: Date;
   quoteAuthor!: string;
   theQoute!: Quote;
+  theQuote!: Quote;
   
+
+  submitQuote(){
+    this.theQuote= new Quote(this.quoteName,this.quoteAuthor,this.quoteStr,this.myDate);
+    this.quoteStr='';
+    this.quoteAuthor='';
+    this.quoteName='';
+    this.emitQuote.emit(this.theQuote);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

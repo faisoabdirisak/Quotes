@@ -1,5 +1,5 @@
 <div class="container-fluid">
-    <form >
+    <form (ngSubmit)="submitQuote()">
       <div class="form-group">
         <label for="quotes"><strong>Quotes:</strong></label>
         <input type="text" name="qoute" class="form-control" id="exampleFormControlInput1" [(ngModel)]="quoteStr" placeholder="Add Your Quote In Here:">
