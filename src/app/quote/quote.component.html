@@ -4,7 +4,13 @@
           <div  *ngFor="let quote of quotes; let i=index">
 
             <app-quote-detail [quote]="quote"></app-quote-detail>
+
+            <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>
+            <button class="btn btn-primary" (click)="downvote(i)">Downvote</button>
+            <button class="btn btn-outline-danger" (click)="delQoute(i)">Delete</button>
+            <hr>
   </div>
   </div>
+  
   </div>
   </div>
