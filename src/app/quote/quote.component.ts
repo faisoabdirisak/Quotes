@@ -7,7 +7,7 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  qoutes=[
+  quotes=[
     new Quote("Faiso","world poem","Baba Told us", new Date(2021,12,25)),
     new Quote("FAiso","literature","loves Forever", new Date(2021,12, 25))
   ];
