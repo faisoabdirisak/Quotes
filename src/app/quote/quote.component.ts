@@ -8,8 +8,8 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes=[
-    new Quote("Faiso","world poem","Baba Told us", new Date(2021,12,25)),
-    new Quote("FAiso","literature","loves Forever", new Date(2021,12, 25))
+    new Quote("Faiso","Sir Isaac Newton","This most beautiful system of the sun, planets and comets, could only proceed from the counsel and dominion of an intelligent and powerful Being.", new Date(2021,12,25)),
+    new Quote("Faiso","Socrates, as portrayed in Plato’s Theaetetus","Wonder is the beginning of wisdom.", new Date(2021,12, 25))
   ];
 
   upNum!: number;
