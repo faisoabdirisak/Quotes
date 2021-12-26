@@ -22,6 +22,10 @@ downvote(i:any){
 delQoute(i: number){
   this.quotes.splice(i, 1)
 }
+
+addQuote(emittedQuote: Quote){
+  this.quotes.push(emittedQuote)
+}
   constructor() { }
 
   ngOnInit(): void {
