@@ -12,6 +12,9 @@ export class QuoteComponent implements OnInit {
     new Quote("FAiso","literature","loves Forever", new Date(2021,12, 25))
   ];
 
+  upNum!: number;
+  dowNum!: number;
+  counter!: number;
 
   upvote(i: any){
     this.quotes[i].upvotes+=1
@@ -26,6 +29,18 @@ delQoute(i: number){
 addQuote(emittedQuote: Quote){
   this.quotes.push(emittedQuote)
 }
+
+highestUpvote(){
+  this.upNum = 0
+  this.dowNum = 0
+
+  for(this.counter=0 ; this.counter < this.quotes.length; this.counter++) {
+    this.dowNum = this.quotes[this.counter].upvotes;
+    if(this.dowNum > this.upNum){this.upNum = this.dowNum}
+  }
+  return  this.upNum
+}
+
   constructor() { }
 
   ngOnInit(): void {

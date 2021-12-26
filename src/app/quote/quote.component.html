@@ -5,6 +5,10 @@
       <div class="col-md-6">
           <div  *ngFor="let quote of quotes; let i=index">
 
+            <p appHighlight *ngIf="highestUpvote()===quote.upvotes && quote.upvotes>0">{{quote.qoute}}</p>
+            <p  *ngIf="highestUpvote()!==quote.upvotes || quote.upvotes===0">{{quote.qoute}}</p>
+  
+
             <app-quote-detail [quote]="quote"></app-quote-detail>
 
             <button class="btn btn-primary" (click)="upvote(i)">Upvote</button>

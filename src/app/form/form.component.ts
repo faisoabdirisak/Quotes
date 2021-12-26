@@ -13,8 +13,8 @@ export class FormComponent implements OnInit {
   quoteName!: string;
   myDate!: Date;
   quoteAuthor!: string;
-  theQoute!: Quote;
   theQuote!: Quote;
+  
   
 
   submitQuote(){
