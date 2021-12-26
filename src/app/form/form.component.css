@@ -1,0 +1,6 @@
+.container-fluid{
+    line-height: 100px;
+    box-shadow: 2px 2px 7px black;
+    background-color: blue;
+    color: white;
+}
